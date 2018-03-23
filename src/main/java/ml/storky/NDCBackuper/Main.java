@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("layouts/MainLayout.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/layouts/MainLayout.fxml"));
         primaryStage.setTitle("NDC-Backuper");
         primaryStage.setScene(new Scene(root, 900, 600));
         primaryStage.show();

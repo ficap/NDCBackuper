@@ -4,7 +4,7 @@ import com.jcraft.jsch.ChannelShell;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 import javafx.scene.chart.PieChart;
 
 import java.io.*;

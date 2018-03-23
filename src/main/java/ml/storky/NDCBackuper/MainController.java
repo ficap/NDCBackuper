@@ -139,7 +139,7 @@ public class MainController implements Initializable {
 
     public void handleNewRouterAction(ActionEvent actionEvent) {
         try {
-            final FXMLLoader loader = new FXMLLoader(getClass().getResource("layouts/NewDeviceLayout.fxml"));
+            final FXMLLoader loader = new FXMLLoader(getClass().getResource("/layouts/NewDeviceLayout.fxml"));
             loader.getNamespace().put("selected", "false");
             Parent parent = loader.load();
             Stage stage = new Stage();
@@ -231,7 +231,7 @@ public class MainController implements Initializable {
         }
 
         try {
-            final FXMLLoader loader = new FXMLLoader(getClass().getResource("layouts/NewDeviceLayout.fxml"));
+            final FXMLLoader loader = new FXMLLoader(getClass().getResource("/layouts/NewDeviceLayout.fxml"));
             loader.getNamespace().put("ipAddress", this.selectedDevice.getIpAddress());
             loader.getNamespace().put("username", this.selectedDevice.getUsername());
             loader.getNamespace().put("description", this.selectedDevice.getDescription());
